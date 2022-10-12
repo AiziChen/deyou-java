@@ -5,6 +5,7 @@ import com.cozz.deyou.cipher.AESUtils;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin(origins = "*")
 public class CipherController {
     @PostMapping(value = "/api/cipher/decrypt-token")
     @ResponseBody
